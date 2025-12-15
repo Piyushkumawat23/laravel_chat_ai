@@ -24,9 +24,7 @@
         <label>Course PDF</label><br>
 
         @if($course->course_pdf)
-            <a href="{{ asset('storage/courses/'.$course->course_pdf) }}" target="_blank">
-                View Current PDF
-            </a><br><br>
+            <img src="{{ asset('public/storage/courses/'.$course->course_pdf) }}" alt="Course Image" width="100"><br><br>
         @endif
 
         <input type="file" name="course_pdf" accept="application/pdf"><br><br>
